@@ -125,7 +125,7 @@ class App extends Component {
                                         direction="column"
                                         justify="center"
                                         align="center"
-                                        onMouseEnter={() => {this.setState({explainRST: true})}} onMouseLeave={() => {this.setState({explainRST: false})}}
+                                        onClick={() => {this.setState({explainRST: !this.state.explainRST})}}
                                     >
                                         {this.state.explainRST &&
                                             <Text textAlign="center" size="25px">Rachel Standard Time: 11:00 PM or 1:00 AM</Text>
@@ -136,7 +136,7 @@ class App extends Component {
                                         direction="column"
                                         justify="center"
                                         align="center"
-                                        onMouseEnter={() => {this.setState({explainSST: true})}} onMouseLeave={() => {this.setState({explainSST: false})}}
+                                        onClick={() => {this.setState({explainSST: !this.state.explainSST})}}
                                     >
                                         {this.state.explainSST &&
                                             <Text textAlign="center" size="25px">Soaad Standard Time: probabilistic time</Text>
@@ -147,7 +147,7 @@ class App extends Component {
                                         direction="column"
                                         justify="center"
                                         align="center"
-                                        onMouseEnter={() => {this.setState({explainJST: true})}} onMouseLeave={() => {this.setState({explainJST: false})}}
+                                        onClick={() => {this.setState({explainJST: !this.state.explainJST})}}
                                     >
                                         {this.state.explainJST &&
                                             <Text textAlign="center" size="25px">Jana Standard Time: +45mins</Text>
